@@ -1,6 +1,9 @@
 #include "stdafx.h"
 #include "ButterflyIndexer.h"
+#include <iostream>
+#include <vector>
 
+using namespace std;
 
 ButterflyIndexer::ButterflyIndexer()
 {
@@ -20,6 +23,19 @@ int ButterflyIndexer::index(const char *butterflyDatabase) {
 	sqlite3 *db;
 	char *zErrMsg = 0;
 	int rc;
+
+
+	vector<int> myInts;
+
+	cout << "this is cool" << endl;
+
+	myInts.push_back(200);
+	myInts.push_back(400);
+
+	for (const int &oneInt : myInts) {
+		cout << oneInt << endl;
+	}
+
 
 	rc = sqlite3_open(butterflyDatabase, &db);
 	if (rc) {

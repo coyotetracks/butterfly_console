@@ -1,6 +1,8 @@
 #pragma once
 #include <vector>
 
+using namespace std;
+
 class ButterflyIndexer
 {
 public:
@@ -8,6 +10,6 @@ public:
 	int index(const char *butterflyDatabase);
 	~ButterflyIndexer();
 private:
-	vector<IndexedItem> indexedList;
+	vector<double> indexedList;
 };
 
