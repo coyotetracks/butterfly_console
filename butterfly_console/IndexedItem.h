@@ -1,4 +1,9 @@
 #pragma once
+
+#include <string>
+
+using namespace std;
+
 class IndexedItem {
 public:
 	IndexedItem();
@@ -6,9 +11,9 @@ public:
 	
 	int getButterlyId() { return butterflyId; }
 	void setButterflyId(int newButterflyId) { butterflyId = newButterflyId;  }
-	char *getWord() { return word;  }
-	void setWord(char *newWord) { word = newWord; }
+	string getWord() { return word;  }
+	void setWord(const string newWord) { word = newWord; }
 private:
 	int butterflyId;
-	char *word;
+	string word;
 };
